@@ -193,12 +193,26 @@ nav ul ul li {
   color: white;
   font-size: 30px;
 }
-
+.logo a:hover {
+  color: red;
+}
 .navbar ul li a {
   font-size: 20px;
   color: bisque;
   list-style: none;
   inline-size: min-content;
+}
+.navbar .btn-menu {
+  display: flex;
+}
+.navbar .menu {
+  display: none;
+}
+.navbar .menu li {
+  margin-left: 20px;
+}
+.navbar ul li a:hover {
+  color: white;
 }
 /* Home Page */
 
@@ -240,6 +254,12 @@ nav ul ul li {
 @media screen and (min-width: 760px) {
   .max-width {
     max-width: 1300px;
+  }
+  .navbar .btn-menu {
+    display: none;
+  }
+  .navbar .menu {
+    display: flex;
   }
   .about-content {
     display: flex;
@@ -337,16 +357,20 @@ nav ul ul li {
   display: block;
 }
 .projects .project-card {
-  background-color: blueviolet;
+  width: 100%;
+  background-color: rgb(104, 96, 110);
   border: 2px solid black;
   padding: 10px;
   margin: 20px 0;
+  padding: 40px;
+  border-radius: 20px;
 }
 .portofolio .projects .project-card a img {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
+  border-radius: 15px;
 }
 
 .project-text {
@@ -366,7 +390,14 @@ nav ul ul li {
   font-size: larger;
   color: white;
 }
-
+.project-text span a i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.project-text span a:hover {
+  color: black;
+  cursor: pointer;
+}
 .project-text p {
   margin-top: 20px;
 }
@@ -428,6 +459,9 @@ nav ul ul li {
   margin-left: 30px;
 }
 
+.contact .icons .subtitle a:hover {
+  color: red;
+}
 .contact form .fields {
   width: auto;
   display: flex;
@@ -472,11 +506,16 @@ nav ul ul li {
   color: white;
   font-size: 20px;
 }
+.contact button:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
 
 /* Footer */
 
 footer {
-  height: 50px;
+  height: 20px;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -484,7 +523,7 @@ footer {
 }
 footer span {
   color: white;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .footer-name {
