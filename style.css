@@ -4,149 +4,6 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-/* nav {
-  display: inline-block;
-}
-.navbar {
-  padding: 30px 60px;
-  background-color: black;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  font-size: larger;
-}
-.max-width {
-  max-width: 800px;
-  margin: auto;
-  padding: 0 50px;
-}
-section {
-  padding: 100px 0;
-}
-div {
-  display: block;
-}
-.navbar .max-width {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-li {
-  display: inline-block;
-  padding: 0 15px;
-}
-ul {
-  display: inline-block;
-}
-.logo a {
-  display: inline-block;
-  font-size: x-large;
-  color: white;
-}
-li a {
-  color: white;
-}
-
-.home {
-  background-color: black;
-  max-width: 100%;
-  height: 100vh;
-  margin: auto; */
-/* max-width: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  height: 100vh;
-  color: white;
-  justify-content: center; */
-/* } */
-/* .home-content {
-   display: block;
-  align-items: center;
-  width: 100%;
-  margin: auto 0 auto 40px;
-} */
-
-/* .home .home-content .text1 {
-  font-size: 30px;
-}
-.home .home-content .text2 {
-  font-size: 60px;
-  font-weight: 800;
-}
-.home .home-content .text3 {
-  font-size: 35px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.home .home-content a {
-  display: inline-block;
-  color: white;
-  font-size: 30px;
-  background-color: rgb(131, 116, 67);
-  border-radius: 5px;
-  padding: 5px;
-  margin-top: 15px;
-} */
-
-/* .about {
-  background-color: white;
-  margin: auto;
-  display: block;
-  padding: 50px;
-}
-.about h2 {
-  display: block;
-  text-align: center;
-  margin-top: 50px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 500;
-}
-
-.about .about-content {
-  background-color: azure;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.about .column {
-  width: 100%;
-  display: flex;
-  font-size: 20px;
-  justify-content: center;
-}
-.about-content img {
-  width: 375px;
-  height: 375px;
-  display: block;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 50px;
-}
-
-.about .column p {
-  text-align: justify;
-}
-
-.skills {
-  max-width: 800px;
-  padding: 0 50px;
-  display: block;
-  justify-content: center;
-}
-.skills h2 {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.skills p {
-  text-align: justify;
-}
- */
 section {
   padding: 100px 0;
 }
@@ -265,6 +122,7 @@ nav ul ul li {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
   .about-content .right {
     margin-left: 20px;
@@ -274,7 +132,7 @@ nav ul ul li {
 .about {
   width: 100%;
   height: auto;
-  background-image: linear-gradient(rgb(61, 52, 52), white);
+  background-image: linear-gradient(rgb(61, 52, 52), rgb(122, 108, 108));
 }
 .about .title,
 .contact .title {
@@ -299,7 +157,8 @@ nav ul ul li {
 
 .about .about-content .column h3 {
   display: flex;
-  justify-content: center;
+
+  align-items: center;
   margin-bottom: 20px;
 }
 .about .about-content .column a {
@@ -317,7 +176,7 @@ nav ul ul li {
 .skills {
   width: 100%;
   height: auto;
-  background-image: linear-gradient(white, aqua);
+  background-image: linear-gradient(rgb(122, 108, 108), rgb(219, 212, 212));
 }
 
 .skills .title {
@@ -326,6 +185,12 @@ nav ul ul li {
   font-size: larger;
   font-weight: 600;
   margin: 0 auto 50px;
+}
+.skills .skills-content .column {
+  width: 100%;
+}
+.skills .skills-content .right {
+  margin-top: 20px;
 }
 
 .skills .skills-content h3 {
@@ -336,13 +201,66 @@ nav ul ul li {
   font-weight: 300;
   margin-bottom: 20px;
 }
-
+.skills .skills-content .right .info {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skills-content .right .line {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgb(145, 137, 137);
+}
+.skills .skills-content .right .line .html {
+  width: 0%;
+  height: 100%;
+  animation: html 5s linear infinite;
+  background: red;
+}
+.skills .skills-content .right .line .css {
+  width: 0%;
+  height: 100%;
+  animation: css 5s linear infinite;
+  background: rgb(196, 250, 0);
+}
+.skills .skills-content .right .line .javascript {
+  width: 0%;
+  height: 100%;
+  animation: javascript 5s linear infinite;
+  background: rgb(15, 177, 226);
+}
+.skills .skills-content .right .line .react {
+  width: 0%;
+  height: 100%;
+  animation: react 5s linear infinite;
+  background: rgb(252, 4, 219);
+}
+@keyframes html {
+  100% {
+    width: 70%;
+  }
+}
+@keyframes css {
+  100% {
+    width: 50%;
+  }
+}
+@keyframes javascript {
+  100% {
+    width: 60%;
+  }
+}
+@keyframes react {
+  100% {
+    width: 65%;
+  }
+}
 /* Portofolio */
 
 .portofolio {
   width: 100%;
   height: auto;
-  background-image: linear-gradient(aqua, purple);
+  background-color: rgb(24, 22, 22);
 }
 
 .portofolio .title {
@@ -369,6 +287,7 @@ nav ul ul li {
   width: 100%;
   height: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
   border-radius: 15px;
 }
@@ -401,7 +320,13 @@ nav ul ul li {
 .project-text p {
   margin-top: 20px;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 860px) {
+  .projects .project-card {
+    display: block;
+  }
+  .portofolio .projects .project-card a img {
+    width: 400px;
+  }
   .max-width {
     max-width: 1300px;
   }
@@ -420,6 +345,12 @@ nav ul ul li {
   .projects .project-card .project-text {
     margin-left: 20px;
   }
+  .skills .skills-content {
+    display: flex;
+  }
+  .skills .skills-content .right {
+    margin-left: 20px;
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -434,7 +365,9 @@ nav ul ul li {
 }
 
 /* Contact */
-
+.contact {
+  background-color: white;
+}
 .contact .contact-content .column .text {
   margin-bottom: 5px;
   font-size: 20px;
