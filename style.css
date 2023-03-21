@@ -182,7 +182,6 @@ nav ul ul li {
 .skills .title {
   display: flex;
   justify-content: center;
-  font-size: larger;
   font-weight: 600;
   margin: 0 auto 50px;
 }
@@ -257,18 +256,18 @@ nav ul ul li {
 }
 /* Portofolio */
 
-.portofolio {
+.portfolio {
   width: 100%;
   height: auto;
   background-color: rgb(24, 22, 22);
 }
 
-.portofolio .title {
+.portfolio .title {
   display: flex;
   justify-content: center;
-  font-size: larger;
   font-weight: 600;
   margin: 0 auto 50px;
+  color: white;
 }
 .projects {
   width: 100%;
@@ -283,7 +282,7 @@ nav ul ul li {
   padding: 40px;
   border-radius: 20px;
 }
-.portofolio .projects .project-card a img {
+.portfolio .projects .project-card a img {
   width: 100%;
   height: auto;
   display: flex;
