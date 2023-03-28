@@ -149,9 +149,10 @@ nav ul ul li {
   width: 100%;
 }
 .about .about-content .column img {
-  width: 100%;
+  width: 60%;
   height: auto;
   display: block;
+  object-fit: cover;
   margin: 0 auto 60px;
 }
 
