@@ -235,6 +235,18 @@ nav ul ul li {
   animation: react 5s linear infinite;
   background: rgb(252, 4, 219);
 }
+.skills .skills-content .right .line .nodeJs {
+  width: 0%;
+  height: 100%;
+  animation: nodeJs 5s linear infinite;
+  background: rgb(5, 9, 235);
+}
+.skills .skills-content .right .line .mongo {
+  width: 0%;
+  height: 100%;
+  animation: mongo 5s linear infinite;
+  background: rgb(252, 74, 4);
+}
 @keyframes html {
   100% {
     width: 70%;
@@ -253,6 +265,16 @@ nav ul ul li {
 @keyframes react {
   100% {
     width: 65%;
+  }
+}
+@keyframes nodeJs {
+  100% {
+    width: 40%;
+  }
+}
+@keyframes mongo {
+  100% {
+    width: 40%;
   }
 }
 /* Portfolio */
